@@ -1,5 +1,9 @@
 # Basic Git Scraper Template
 
+I recently updated the scraper in script.py to gather the latest editorials from The Daily Pennsylvanian website. This change helps me track how editorials change over time, showing what topics are being talked about more. I chose to focus on editorials because they give insight into the newspaper's views and the issues they find important.
+
+To do this, I made changes to the scrape_latest_editorial function. Now, it looks specifically at the editorials section of the site. I used BeautifulSoup to pick out the right parts of the web page that contain the editorial headlines. This way, I make sure I’m getting the correct information every time.
+
 This template provides a starting point for **git scraping**—the technique of scraping data from websites and automatically committing it to a Git repository using workflows, [coined by Simon Willison](https://simonwillison.net/2020/Oct/9/git-scraping/).
 
 Git scraping helps create an audit trail capturing snapshots of data over time. It leverages Git's version control and a continuous integration's scheduling capabilities to regularly scrape sites and save data without needing to manage servers.
